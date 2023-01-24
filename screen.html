@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Potentiel futur jeux</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css"> 
+	<script src="https://kit.fontawesome.com/84d848d236.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="content-container">
+<header>
+	<div id="header-right">
+		<div id="local-time"></div>
+	</div>
+	<div id="header-right">
+		<div id="notif-muted" class="fas fa-bell-slash"></div>
+		<div id="header-signal">
+			<div class="signal-all" id="signal-0"></div>
+			<div class="signal-all" id="signal-1"></div>
+			<div class="signal-all" id="signal-2"></div>
+			<div class="signal-all" id="signal-3"></div>
+			<div class="signal-all" id="signal-4"></div>
+		</div>	
+		<div id="battery-left"></div>
+	</div>
+</header>
+
+<main>
+	<div id="app-background"><div id="app-content"></div></div>
+	<div id="div-date">
+		<h1 id="date"></h1>
+		<br>
+		<h3 id="sub-date"></h3>
+	</div>
+	<div id="main-app">
+		<div class="app-grid" id="app-row-1">
+			<figure><div class="app-all fa fa-bitcoin" id="bitcoin-app"></div><figcaption>Bitcoin</figcaption></figure>
+			<figure><div class="app-all fa fa-steam" id="steam-app"></div><figcaption>Steam</figcaption></figure>
+			<figure><div class="app-all fa fa-youtube-play" id="youtube-app"></div><figcaption>Youtube</figcaption></figure>
+			<figure><div class="app-all fa fa-calculator" id="calc-app"></div><figcaption>Calc</figcaption></figure>
+		</div>
+		<div class="app-grid" id="app-row-2">
+			<figure><div class="app-all fa fa-linkedin" id="linkedin-app"></div><figcaption>LinkedIn</figcaption></figure>
+			<figure><div class="app-all fa fa-instagram" id="instagram-app"></div><figcaption>Instagram</figcaption></figure>
+			<figure><div class="app-all fa fa-github" id="github-app"></div><figcaption>Github</figcaption></figure>
+			<figure><div class="app-all fa-brands fa-internet-explorer" id="google-app"></div><figcaption>Internet</figcaption></figure>
+		</div>
+		<div class="app-grid" id="app-row-3">
+			<figure><div class="app-all fa fa-facebook" id="facebook-app"></div><figcaption>Facebook</figcaption></figure>
+			<figure><div class="app-all fa-solid fa-shuffle" id="random-app"></div><figcaption>Random</figcaption></figure>
+			<figure><div class="app-all fa fa-file" id="document-app"></div><figcaption>Doc</figcaption></figure>
+			<figure><div class="app-all fa fa-reddit" id="reddit-app"></div><figcaption>Delete</figcaption></figure>
+		</div>
+		<div class="app-grid" id="app-row-4">
+			<figure><div class="app-all fa-brands fa-discord" id="discord-app"></div><figcaption>Discord</figcaption></figure>
+			<figure><div class="app-all fa fa-spotify" id="spotify-app"></div><figcaption>Spotify</figcaption></figure>
+			<figure><div class="app-all fa fa-twitch" id="twitch-app"></div><figcaption>Twitch</figcaption></figure>
+			<figure><div class="app-all fa fa-twitter" id="twitter-app"></div><figcaption>Twitter</figcaption></figure>
+		</div>
+		<div class="app-grid" id="foot-app">
+			<div class="app-all fa fa-phone" id="phone-app"></div>
+			<div class="app-all far fa-comment-dots" id="message-app"></div>
+			<div class="app-all fas fa-camera" id="photo-app"></div>
+			<div class="app-all fas fa-address-book" id="contact-app"></div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="nav-footer" id="nav-triangle">&#x25C1;</div>
+	<div class="nav-footer" id="nav-circle">&#9711;</div>
+	<div class="nav-footer" id="nav-square">&#9634;</div>
+</footer>
+</div>
+<script src="assets/script/lockscreen.js"></script>
+<script src="assets/script/timer.js"></script>
+<script src="assets/script/drawing.js"></script>
+<script src="assets/script/app.js"></script>
+<script src="assets/script/nav.js"></script>
+<script src="assets/script/calculator.js"></script>
+</body>
