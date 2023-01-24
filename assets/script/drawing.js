@@ -66,6 +66,28 @@ let drawing = false;
 let lastX;
 let lastY;
 
+//test
+canvasContent.ontouchstart = function(event) {
+  drawing = true;
+  lastX = event.touches[0].clientX * 6;
+  lastY = event.touches[0].clientY * 1.9;
+};
+canvasContent.ontouchmove = function(event) {
+  if (drawing) {
+    let x = event.touches[0].clientX * 6;
+    let y = event.touches[0].clientY * 1.9;
+    canvasContext.beginPath();
+    canvasContext.moveTo(lastX, lastY);
+    canvasContext.lineTo(x, y);
+    canvasContext.stroke();
+    lastX = x;
+    lastY = y;
+  }
+};
+canvasContent.ontouchend = function() {
+  drawing = false;
+};
+
 // Start drawing
 canvasContent.onmousedown = function(event) 
 {
